@@ -12,13 +12,13 @@
 
 ```bash
 # Claude Code
-npx skillpm install picnow
+npx skillpm install @jxai/picnow
 
 # SkillHub
-skillhub install picnow
+skillhub install @jxai/picnow
 
 # ClawHub
-clawdhub install picnow
+clawdhub install @jxai/picnow
 
 # Manual
 git clone https://github.com/jeekchen/picnow-skill

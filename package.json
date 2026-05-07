@@ -1,5 +1,5 @@
 {
-  "name": "picnow",
+  "name": "@jxai/picnow",
   "version": "1.0.0",
   "description": "Image generation skill for Claude Code, Codex, OpenClaw and any SKILL.md-compatible LLM agent. Wraps api.letmego.top (GPT-Image-2).",
   "license": "MIT",
