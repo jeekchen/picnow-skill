@@ -22,7 +22,7 @@ clawdhub install @jxai/picnow
 
 # Manual
 git clone https://github.com/jeekchen/picnow-skill
-cp -r picnow-skill ~/.claude/skills/picnow
+cp -r picnow-skill/skills/picnow ~/.claude/skills/picnow
 ```
 
 ### 2. Get a token (令牌)
@@ -74,12 +74,12 @@ Just talk to your agent — the skill activates automatically:
 
 ```bash
 # Text-to-image
-LETMEGO_API_KEY=your_token node scripts/generate.js \
+LETMEGO_API_KEY=your_token node skills/picnow/scripts/generate.js \
   --prompt "product photo, white background, studio lighting" \
   --quality 2k --aspect square --n 1
 
 # Image-to-image (style transfer / edit)
-LETMEGO_API_KEY=your_token node scripts/generate.js \
+LETMEGO_API_KEY=your_token node skills/picnow/scripts/generate.js \
   --prompt "anime style, vibrant colors" \
   --quality 1k --aspect square --ref ./reference.jpg
 ```
