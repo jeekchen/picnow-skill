@@ -1,0 +1,32 @@
+{
+  "name": "picnow",
+  "version": "1.0.0",
+  "description": "Image generation skill for Claude Code, Codex, OpenClaw and any SKILL.md-compatible LLM agent. Wraps api.letmego.top (GPT-Image-2).",
+  "license": "MIT",
+  "author": "jeekchen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeekchen/picnow-skill.git"
+  },
+  "homepage": "https://picnow.letmego.top/skills",
+  "keywords": [
+    "skill-md",
+    "agent-skills",
+    "claude-code",
+    "claude-code-skills",
+    "codex",
+    "openclaw",
+    "skillsmp",
+    "image-generation",
+    "text-to-image",
+    "gpt-image-2",
+    "picnow"
+  ],
+  "files": [
+    "SKILL.md",
+    "scripts/"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
