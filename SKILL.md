@@ -2,14 +2,28 @@
 name: picnow
 description: >
   Generate high-quality images via Picnow (api.letmego.top). Activate when
-  the user wants to create images, product photos, posters, illustrations,
-  or any visual content — including editing or restyling an existing image.
+  the user wants to create, generate, draw, or design images — including
+  product photos, posters, banners, illustrations, social media visuals,
+  hero shots, covers, and thumbnails. Also handles image editing: style
+  transfer, background change, image-to-image (改图/配图/修图/图改图).
+  Supports 1K / 2K / 4K resolution, square / landscape / portrait aspect ratios.
   Requires LETMEGO_API_KEY environment variable (your letmego 令牌/token).
 when_to_use:
-  - User asks to generate, draw, or create an image
-  - User says 生图 / 画图 / 画张 / 生成图片 / 帮我画
-  - User wants a product photo, poster, banner, or illustration
-  - User wants to edit or restyle an existing image (image-to-image)
+  # English triggers
+  - User asks to generate, draw, create, or make an image / picture / photo / visual / graphic / artwork / illustration
+  - User says "image for", "picture for", "visual for", "banner for", "poster for"
+  - User wants a product photo, hero shot, thumbnail, cover, poster, banner, or social media image
+  - User wants to edit, retouch, restyle, stylize, or transform an existing image
+  - User wants image-to-image, style transfer, background change, or outpainting
+  - User asks to "add an image", "pair with image", "create a graphic", or "design a visual"
+  - User wants to render, visualize, or illustrate something
+  # 中文触发词
+  - 用户说 生图 / 出图 / 做图 / 画图 / 画张 / 画一张 / 帮我画 / 帮我出图
+  - 用户说 配图 / 加图 / 插图 / 来张图 / 给我图 / 图片素材
+  - 用户说 改图 / 修图 / 图改图 / 换风格 / 风格化 / 重绘
+  - 用户说 生成图片 / 生成图像 / 创作图 / 设计图
+  - 用户说 产品图 / 主图 / 效果图 / 宣传图 / 海报 / 封面 / 头图 / 背景图
+  - 用户说 换背景 / 去背景 / 修改图片 / 图片编辑
 allowed-tools:
   - Bash
 ---
@@ -26,8 +40,8 @@ Before generating, verify the token is set:
 ```bash
 if [ -z "$LETMEGO_API_KEY" ]; then
   echo "❌ LETMEGO_API_KEY is not set."
-  echo "Visit https://picnow.letmego.top/settings to get your 令牌, then:"
-  echo "  export LETMEGO_API_KEY=your_令牌"
+  echo "Visit https://api.letmego.top to get your 令牌, then:"
+  echo "  export LETMEGO_API_KEY=your_token"
   exit 1
 fi
 ```

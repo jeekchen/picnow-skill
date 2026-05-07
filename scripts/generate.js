@@ -146,7 +146,7 @@ async function main() {
   if (!token) {
     fail(
       '❌ LETMEGO_API_KEY is not set.\n' +
-        'Get your 令牌 at https://picnow.letmego.top/settings, then:\n' +
+        'Get your 令牌 at https://api.letmego.top, then:\n' +
         '  export LETMEGO_API_KEY=your_令牌'
     );
   }

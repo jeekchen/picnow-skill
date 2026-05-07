@@ -26,7 +26,7 @@ cp -r picnow-skill ~/.claude/skills/picnow
 
 ## Set up your token (令牌)
 
-Get your token at **https://picnow.letmego.top/settings**, then:
+Get your token at **https://api.letmego.top**, then:
 
 ```bash
 export LETMEGO_API_KEY=your_令牌
