@@ -11,8 +11,11 @@
 ### 1. Install
 
 ```bash
-# Claude Code
+# skillpm — installs from npm
 npx skillpm install @jxai/picnow
+
+# skills — installs from GitHub
+npx skills install jeekchen/picnow-skill
 
 # SkillHub
 skillhub install @jxai/picnow
