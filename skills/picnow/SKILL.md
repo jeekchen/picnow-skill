@@ -33,6 +33,11 @@ allowed-tools:
 Picnow wraps the `api.letmego.top` GPT-Image-2 API. This skill handles
 text-to-image and image-to-image (edit) generation.
 
+The script uses the **async API** (`/v1/async/images/...`) — it submits the
+job, polls until completion, and prints the final URL. This avoids the 100s
+Cloudflare edge timeout that 2K/4K renders used to hit. A single call may
+take up to ~5 minutes for heavy renders; no extra flags needed.
+
 ## 1. Environment check
 
 Before generating, verify the token is set:
